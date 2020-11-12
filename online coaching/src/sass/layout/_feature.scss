@@ -1,0 +1,51 @@
+.feature {
+    background-color: $color-primary-light;
+    padding: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    &__box {
+        width: 45%;
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        gap: 1.7rem;
+        justify-items: flex-start;
+        margin: 2em auto;
+
+        h3{
+            display: block;
+            width: 100%;
+        }
+
+        @include respond(phone) {
+            width: 80%;
+        }
+
+        @include respond(sm-phone) {
+            grid-template-columns: 1fr;
+        }
+
+        &__icon {
+            grid-row: 1 / span 2;
+
+            i {
+                display: inline-block;
+                background-color: $color-primary-darker;
+                padding: 1em;
+                border-radius: 50%;
+            }
+
+            @include respond(sm-phone) {
+                grid-row: 1;
+                justify-self: center;
+            }
+        }
+    }
+
+    @include respond(sm-phone) {
+        justify-items: center;
+        text-align: center;
+    }
+}

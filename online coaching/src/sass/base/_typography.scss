@@ -1,0 +1,81 @@
+.heading {
+    text-transform: uppercase;
+
+    &--pri {
+        font-size: $heading-pri-font-size;
+        font-family: $h1-font;
+    }
+
+    &--sec {
+        font-family: $h1-font;
+        font-size: $heading-sec-font-size;
+        letter-spacing: 0.4em;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    &--ter {
+        font-size: $heading-tre-font-size;
+        font-family: $h2-font;
+        
+    }
+
+    &--quadr {
+        font-size: $heading-quadr-font-size;
+    }
+}
+
+.banner {
+    text-align: center;
+
+    &__heading {
+        &--pri {
+            font-weight: bold;
+            letter-spacing: 1em;
+            @include respond(sm-phone) {
+                letter-spacing: 0.3em;
+            }
+        }
+
+        &--ter {
+            font-family: $h1-font;
+            font-weight: 300;
+        }
+    }
+}
+
+.about {
+    &__heading {
+        text-align: center;
+    }
+}
+
+.video-w-content {
+    .video-w-text {
+        &__text {
+            color: $color-white;
+        }
+    }
+}
+
+.feature__box {
+    color: $color-secondary;
+
+    &__icon {
+        font-size: $icon-font-size;
+    }
+}
+
+.programs {
+    text-align: center;
+}
+
+.results{
+    h3 {
+        margin-bottom: 2rem;
+    }
+
+    @include respond(phone) {
+                text-align: center;
+            }
+}

@@ -1,0 +1,100 @@
+.video-w-content {
+    background-color: $color-primary;
+    .video-w-text {
+        margin-bottom: -0.4rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        @include respond(phone) {
+            grid-template-columns: 1fr;
+            margin-bottom: 0;
+        }
+
+        .left {
+            order: 1;
+            @include respond(phone) {
+                order: 0; //1rem = 12, 12/16
+            }
+        }
+
+        .right {
+            order: 2;
+            @include respond(phone) {
+                order: 0; //1rem = 12, 12/16
+            }
+        }
+
+        &__video {
+            width: 100%;
+
+            & > video {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                backface-visibility: hidden;
+            }
+        }
+
+        &__text {
+            background-color: $color-primary;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 2em 3em;
+            width: 135%;
+
+            @include respond(phone) {
+                width: 99%;
+            }
+
+            & > * {
+                width: 80%;
+            }
+
+            &.left {
+                clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);
+                @include respond(phone) {
+                    padding:2em 3em ;
+                    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+                    p {
+                        width: 100%;
+                    }
+                }
+            }
+
+            &.right {
+                clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
+                position: relative;
+                right: 35%;
+                padding-left: 35%;
+
+                @include respond(tab-port) {
+                    p {
+                        width: 100%;
+                    }
+                }
+
+                @include respond(phone) {
+                    padding:2em 3em ;
+                    right: 0;
+                    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+                }
+            }
+
+            p {
+                width: 70%;
+            }
+        }
+
+        &__btn {
+            width: max-content;
+            margin-right: 10%;
+            align-self: center;
+        }
+
+        &__link {
+            padding: 0.7em 1.1em;
+        }
+    }
+}

@@ -1,0 +1,111 @@
+footer {
+    background-color: $color-primary;
+    padding: 3rem 2rem;
+    font-size: $small-font-size;
+    .footer {
+        color: $color-grey-light-1;
+        display: flex;
+        justify-content: space-between;
+
+        @include respond(tab-port) {
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2em;
+        }
+
+        &__logo-box {
+            width: 25%;
+            height: auto;
+
+
+            @include respond(tab-port) {
+                display: flex;
+                justify-content: center;
+            }
+
+            img {
+                display: inline-block;
+                width: 5rem;
+                filter: brightness(100);
+            }
+
+            &--flex {
+                display: flex;
+                align-items: center;
+
+                @include respond(tab-port) {
+                    flex-direction: column;
+                }
+            }
+        }
+
+        &__navigation {
+            width: 70%;
+            display: flex;
+            align-items: center;
+            @include respond(tab-port) {
+                width: 100%;
+            }
+        }
+
+        &__list {
+            width: 95%;
+            list-style: none;
+            display: flex;
+            align-content: center;
+            justify-content: space-evenly;
+
+            @include respond(phone) {
+                flex-wrap: wrap;
+                width: 100%;
+                gap: 1em;
+            }
+        }
+
+        &__item {
+            display: inline-block;
+
+            @include respond(tab-port) {
+                width: 30%;
+                text-align: center;
+            }
+        }
+
+        &__link {
+            &:link,
+            &:visited {
+                color: $color-grey-light-1;
+                text-decoration: none;
+                text-transform: uppercase;
+                display: inline-block;
+                transition: all 0.2s;
+            }
+
+            &:hover,
+            &:active {
+                transform: scale(1.2);
+            }
+
+            &--logo {
+                &:hover,
+                &:active {
+                    transform: scale(1);
+                }
+            }
+        }
+
+        &__copyright {
+            margin: 5rem auto 0;
+            text-align: center;
+            border-top: 1px solid $color-grey-dark;
+            padding-top: 2rem;
+            width: 80%;
+
+            // @include respond(tab-port) {
+            //     width: 100%;
+            //     float: none;
+            // }
+        }
+    }
+}

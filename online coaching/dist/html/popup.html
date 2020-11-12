@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" type="text/css" href="dist/css/main.min.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="popup">
+            <div class="popup__form">
+                <div class="popup__close btn popup__btn--close">
+                    <p class="popup__close__btn" id="popup__close__btn">x</p>
+                </div>
+                <form action="">
+                    <div class="popup__group popup__name--first">
+                        <label
+                            class="popup__label popup__label--text"
+                            for="firstName"
+                            >First Name</label
+                        >
+                        <input
+                            class="popup__input popup__input--text"
+                            type="text"
+                            name="firstName"
+                            id="firstName"
+                            placeholder="First Name"
+                        />
+                    </div>
+
+                    <div class="popup__group popup__name--last">
+                        <label
+                            class="popup__label popup__label--text"
+                            for="lastName"
+                            >Last Name</label
+                        >
+                        <input
+                            class="popup__input popup__input--text"
+                            type="text"
+                            name="lastName"
+                            id="lastName"
+                            placeholder="Last Name"
+                        />
+                    </div>
+
+                    <div class="popup__group popup__email--email">
+                        <label
+                            class="popup__label popup__label--text"
+                            for="email"
+                            >E-Mail</label
+                        >
+                        <input
+                            class="popup__input popup__input--text"
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="E-Mail"
+                        />
+                    </div>
+
+                    <div class="popup__group popup__email--password">
+                        <label
+                            class="popup__label popup__label--text"
+                            for="password"
+                            >Password</label
+                        >
+                        <input
+                            class="popup__input popup__input--text"
+                            type="password"
+                            name="password"
+                            id="password"
+                            placeholder="Password"
+                        />
+                    </div>
+
+                    <div class="popup__gender">
+                        <label for="gender" class="popup__label">Gender:</label>
+                    
+                        <div class="popup__radio-group">
+                            <input type="radio" class="popup__radio-input" id="male" name="gender" />
+                            <label for="male" class="popup__radio-label">
+                                <span class="popup__radio-button"></span>
+                                Male
+                            </label>
+                        </div>
+                        <div class="popup__radio-group">
+                            <input type="radio" class="popup__radio-input" id="female" name="gender" />
+                            <label for="female" class="popup__radio-label">
+                                <span class="popup__radio-button"></span>
+                                Female
+                            </label>
+                        </div>
+                        <div class="popup__radio-group">
+                            <input type="radio" class="popup__radio-input" id="nts" name="gender" />
+                            <label for="nts" class="popup__radio-label">
+                                <span class="popup__radio-button"></span>
+                                Prefer not to say
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="popup__age">
+                        <label for="age" class="popup__label">Age:</label>
+                        <input
+                            class="popup__input popup__input--num"
+                            type="number"
+                            min="1"
+                            max="90"
+                            name="age"
+                            id=""
+                        />
+                    </div>
+
+                    
+
+                    <!--
+                    <div class="popup__program">
+                        <label for="program" class="popup__label"
+                            >Program:</label
+                        >
+                        <div class="popup__radio-group">
+                            <input
+                                type="radio"
+                                class="popup__radio-input"
+                                id="lose-fat"
+                                name="program"
+                            />
+                            <label for="lose-fat" class="popup__radio-label">
+                                <span class="popup__radio-button"></span>
+                                Lose Fat
+                            </label>
+                        </div>
+
+                        <div class="popup__radio-group">
+                            <input
+                                type="radio"
+                                class="popup__radio-input"
+                                id="gain-muscles"
+                                name="program"
+                            />
+                            <label for="gain-muscles" class="popup__radio-label">
+                                <span class="popup__radio-button"></span>
+                                Gain Muscles
+                            </label>
+                        </div>
+                        <div class="popup__radio-group">
+                            <input
+                                type="radio"
+                                class="popup__radio-input"
+                                id="improve-fitness"
+                                name="program"
+                            />
+                            <label
+                                for="improve-fitness"
+                                class="popup__radio-label"
+                            >
+                                <span class="popup__radio-button"></span>
+                                Improve Fitness
+                            </label>
+                        </div>
+                        <div class="popup__radio-group">
+                            <input
+                                type="radio"
+                                class="popup__radio-input"
+                                id="costumized"
+                                name="program"
+                            />
+                            <label for="costumized" class="popup__radio-label">
+                                <span class="popup__radio-button"></span>
+                                Costumized
+                            </label>
+                        </div>
+                    </div>-->
+                    <div class="popup__submit btn">
+                        <button type="submit" class="popup__btn">
+                            Sign Up
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="src/js/index.js"></script>
+
+        <!--<div class="row"></div>
+
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img
+                        src="dist/resources/img/labtop.jpg"
+                        width="300px"
+                        alt="Tour photo"
+                        class="popup__img"
+                    />
+                </div>
+                <div class="popup__right">
+                        <div class="popup__form">
+                            <form action="#" class="form">
+                                <div class="u-margin-bottom-medium">
+                                    <h2 class="heading-secondary">
+                                        Start with us now
+                                    </h2>
+                                </div>
+
+                                <div class="form__group">
+                                    <input
+                                        type="text"
+                                        class="form__input"
+                                        placeholder="First name"
+                                        id="firstname"
+                                        required
+                                    />
+                                    <label for="firstname" class="form__label"
+                                        >Full name</label
+                                    >
+                                </div>
+                                <div class="form__group">
+                                    <input
+                                        type="text"
+                                        class="form__input"
+                                        placeholder="Last name"
+                                        id="lastname"
+                                        required
+                                    />
+                                    <label for="lastname" class="form__label"
+                                        >Last name</label
+                                    >
+                                </div>
+                                
+
+                                <div class="form__group">
+                                    <input
+                                        type="email"
+                                        class="form__input"
+                                        placeholder="Email address"
+                                        id="email"
+                                        required
+                                    />
+                                    <label for="email" class="form__label"
+                                        >Email address</label
+                                    >
+                                </div>
+                                <div class="form__group">
+                                    <input type="Password" class="form__input" placeholder="Password" id="name" required />
+                                    <label for="name" class="form__label"> Password</label>
+                                </div>
+
+                                <div class="form__group u-margin-bottom-medium">
+                                    <div class="form__radio-group">
+                                        <input
+                                            type="radio"
+                                            class="form__radio-input"
+                                            id="lose-fat"
+                                            name="size"
+                                        />
+                                        <label
+                                            for="lose-fat"
+                                            class="form__radio-label"
+                                        >
+                                            <span
+                                                class="form__radio-button"
+                                            ></span>
+                                            Lose Fat
+                                        </label>
+                                    </div>
+
+                                    <div class="form__radio-group">
+                                        <input
+                                            type="radio"
+                                            class="form__radio-input"
+                                            id="gain-muscles"
+                                            name="size"
+                                        />
+                                        <label
+                                            for="gain-muscles"
+                                            class="form__radio-label"
+                                        >
+                                            <span
+                                                class="form__radio-button"
+                                            ></span>
+                                            Gain Muscles
+                                        </label>
+                                    </div>
+                                    <div class="form__radio-group">
+                                        <input
+                                            type="radio"
+                                            class="form__radio-input"
+                                            id="improve-fitness"
+                                            name="size"
+                                        />
+                                        <label
+                                            for="improve-fitness"
+                                            class="form__radio-label"
+                                        >
+                                            <span
+                                                class="form__radio-button"
+                                            ></span>
+                                            Improve Fitness
+                                        </label>
+                                    </div>
+                                    <div class="form__radio-group">
+                                        <input
+                                            type="radio"
+                                            class="form__radio-input"
+                                            id="costumized"
+                                            name="size"
+                                        />
+                                        <label
+                                            for="costumized"
+                                            class="form__radio-label"
+                                        >
+                                            <span
+                                                class="form__radio-button"
+                                            ></span>
+                                            Costumized
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="form__group">
+                                    <button class="btn btn--green">
+                                        Next step &rarr;
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    --></body>
+</html>

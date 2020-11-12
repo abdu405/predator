@@ -1,0 +1,41 @@
+.header--sub {
+    background-color: $color-primary;
+    padding: 1rem;
+    padding-right: 3rem;
+    width: 100vw;
+    color: $color-secondary;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2000;
+    position: fixed;
+    height: auto;
+    border-bottom: $color-secondary 2px solid;
+    box-shadow: 0 2px 2px 2px rgba($color-black, 0.5);
+    transition: display 5s;
+    
+    &__box{
+        width: max-content;
+        display: flex;
+        align-items: center;
+    }
+    
+    &__logo-box {
+        width: 25%;
+        height: auto;
+
+        img {
+            display: inline-block;
+            width: 5rem;
+        }
+
+        &--flex {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $color-secondary;
+    }
+}
